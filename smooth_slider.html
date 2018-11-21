@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="animate.min.css">
+    <title>scroll-out</title>
+</head>
+<body>
+    <section>
+        <h2>hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officia omnis eveniet dolores eum quia impedit temporibus sapiente harum! Doloremque ex dolore perferendis dolor quaerat veniam quas aspernatur sed illum!</p>
+    </section>
+    <section>
+        <h2 data-scroll>hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officia omnis eveniet dolores eum quia impedit temporibus sapiente harum! Doloremque ex dolore perferendis dolor quaerat veniam quas aspernatur sed illum!</p>
+    </section>
+    <section  data-scroll>
+        <h2>hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officia omnis eveniet dolores eum quia impedit temporibus sapiente harum! Doloremque ex dolore perferendis dolor quaerat veniam quas aspernatur sed illum!</p>
+    </section>
+    <section class="rotateIn" data-scroll>
+        <h2>hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, officia omnis eveniet dolores eum quia impedit temporibus sapiente harum! Doloremque ex dolore perferendis dolor quaerat veniam quas aspernatur sed illum!</p>
+    </section>
+    
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>
+        ScrollOut({
+  onShown(el) {
+    el.classList.add("rotateIn");
+  }
+});
+    </script>
+</body>
+</html>
